@@ -1,16 +1,25 @@
-## Hi there 👋
+## MPDMI
+The code and dataset for our paper:Meta-Paths aware Dynamic Multi-Interest learning for sequential recommendation
+## Dependencies
+- Python 3.7
+- torch 1.5.0
+- numpy 1.15.4
+- scipy 1.1.0
+- sklearn 0.20.0
+- torch_scatter 2.0.5
+- netwrokx 2.5
+## Usage
+### Datasets
+You need to download the datasets required for the model via the following links:
 
-<!--
-**MPDMI/MPDMI** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Books:http://jmcauley.ucsd.edu/data/amazon
 
-Here are some ideas to get you started:
+MovieLens-1M:https://grouplens.org/datasets/movielens
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Last-FM:https://grouplens.org/datasets/hetrec-2011/
+### Generate data
+You need to run the file data_{dataset}.py to generate the data format needed for our model.
+
+You need to run the file generate_paths_{dataset}.py to generate metapath. You can set the data set in the file.
+### Training and Testing
+Then you can run the file main.py to train and test our model. 
